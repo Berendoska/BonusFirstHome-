@@ -1,8 +1,8 @@
 package ru.netology;
 
-import org.testng.annotations.Test;
+import org.junit.Test;
 
-import static org.testng.Assert.*;
+import static org.junit.Assert.*;
 
 public class BonusServiceHomeTest {
 
@@ -13,7 +13,7 @@ public class BonusServiceHomeTest {
         int actual =  bonusServiceHome.remain(amount);
         int expected = 100;
 
-        assertEquals(actual, expected); //операция сравнения
+        assertEquals(expected, actual); //операция сравнения
     }
 
     @Test
@@ -23,7 +23,7 @@ public class BonusServiceHomeTest {
         int actual =  bonusServiceHome.remain(amount);
         int expected = 990;
 
-        assertEquals(actual, expected); //операция сравнения
+        assertEquals(expected, actual); //операция сравнения
     }
 
     @Test
@@ -33,7 +33,7 @@ public class BonusServiceHomeTest {
         int actual =  bonusServiceHome.remain(amount);
         int expected = 999;
 
-        assertEquals(actual, expected); //операция сравнения
+        assertEquals(expected, actual); //операция сравнения
     }
 
     @Test
@@ -43,7 +43,7 @@ public class BonusServiceHomeTest {
         int actual =  bonusServiceHome.remain(amount);
         int expected = 900;
 
-        assertEquals(actual, expected); //операция сравнения
+        assertEquals(expected, actual); //операция сравнения
     }
 
     @Test
@@ -53,7 +53,7 @@ public class BonusServiceHomeTest {
         int actual =  bonusServiceHome.remain(amount);
         int expected = 0;
 
-        assertEquals(actual, expected); //операция сравнения
+        assertEquals(expected, actual); //операция сравнения
     }
 }
 
