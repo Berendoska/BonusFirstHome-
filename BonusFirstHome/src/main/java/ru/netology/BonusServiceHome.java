@@ -6,4 +6,5 @@ public class BonusServiceHome  {
     public int remain(int amount) {
         return boundary - amount % boundary;
     }
+    //
 }
